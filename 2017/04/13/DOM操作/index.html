@@ -3,21 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>归档: 2017/4 | 快乐园 - 个人博客</title>
+  <title>dom操作 | 快乐园 - 个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
   
   
-  <meta name="description" content="快乐园，一起学，一起玩的东东">
-<meta property="og:type" content="website">
-<meta property="og:title" content="快乐园 - 个人博客">
-<meta property="og:url" content="http://yoursite.com/archives/2017/04/index.html">
+  <meta name="description" content="我的笔记-DOM操作属性Attributes    存储节点的属性列表(只读)childNodes    存储节点的子节点列表(只读)dataType    返回此节点的数据类型Definition    以DTD或XML模式给出的节点的定义(只读)Doctype    指定文档类型节点(只读)documentElement    返回文档的根元素(可读写)firstChild    返回当前节点">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DOM操作">
+<meta property="og:url" content="http://yoursite.com/2017/04/13/DOM操作/index.html">
 <meta property="og:site_name" content="快乐园 - 个人博客">
-<meta property="og:description" content="快乐园，一起学，一起玩的东东">
+<meta property="og:description" content="我的笔记-DOM操作属性Attributes    存储节点的属性列表(只读)childNodes    存储节点的子节点列表(只读)dataType    返回此节点的数据类型Definition    以DTD或XML模式给出的节点的定义(只读)Doctype    指定文档类型节点(只读)documentElement    返回文档的根元素(可读写)firstChild    返回当前节点">
+<meta property="og:updated_time" content="2017-04-13T03:42:11.360Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="快乐园 - 个人博客">
-<meta name="twitter:description" content="快乐园，一起学，一起玩的东东">
+<meta name="twitter:title" content="DOM操作">
+<meta name="twitter:description" content="我的笔记-DOM操作属性Attributes    存储节点的属性列表(只读)childNodes    存储节点的子节点列表(只读)dataType    返回此节点的数据类型Definition    以DTD或XML模式给出的节点的定义(只读)Doctype    指定文档类型节点(只读)documentElement    返回文档的根元素(可读写)firstChild    返回当前节点">
   
     <link rel="alternate" href="/atom.xml" title="快乐园 - 个人博客" type="application/atom+xml">
   
@@ -50,14 +52,12 @@
   
 
   
-    <link rel="stylesheet" href="/css/archive.css" >
-  
 
 </head>
 
 
 
-  <body>
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
 
 
   
@@ -80,7 +80,7 @@
             
               <a class="brand" style="
                  margin-top: 0px;"  
-                 >
+                href="#" data-toggle="modal" data-target="#myModal" >
                   <img width="124px" height="124px" alt="Hike News" src="/css/images/mylogo.jpg">
               </a>
             
@@ -157,303 +157,110 @@
             
       <div id="content" class="outer">
         
-          <section id="main">
-  <div class="archives-tags-wrap"><blockquote><span>嗯，目前共计10篇文章</span></blockquote>
+          <section id="main" style="float:none;"><article id="post-DOM操作" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      DOM操作
+    </h1>
+  
 
-
-<!-- 分页显示 -->
-
-	
-	
-		
-		
-		  
-		  
-		  <section class="archives-wrap">
-		    <div class="archive-year-wrap">
-		      <h1><a href="/archives/2017" class="archive-year">2017</a></h1>
-		    </div>
-		    <div class="archives">
-		
-		<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
+      </header>
+    
+    <div class="article-meta">
       
-	<a href="/2017/04/13/65条最常用的正则表达式/" class="archive-article-date">
+	<a href="/2017/04/13/DOM操作/" class="article-date">
 	  <time datetime="2017-04-13T03:31:39.000Z" itemprop="datePublished">2017-04-13</time>
 	</a>
 
       
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2017/04/13/65条最常用的正则表达式/">65条最常用的正则表达式</a>
-    </h1>
-  
+    <a class="article-category-link" href="/categories/notebooks/">笔记本</a>
 
-    </header>
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="我的笔记-DOM操作"><a href="#我的笔记-DOM操作" class="headerlink" title="我的笔记-DOM操作"></a><strong>我的笔记-DOM操作</strong></h3><h4 id="属性"><a href="#属性" class="headerlink" title="属性"></a><strong>属性</strong></h4><p>Attributes    存储节点的属性列表(只读)<br>childNodes    存储节点的子节点列表(只读)<br>dataType    返回此节点的数据类型<br>Definition    以DTD或XML模式给出的节点的定义(只读)<br>Doctype    指定文档类型节点(只读)<br>documentElement    返回文档的根元素(可读写)<br>firstChild    返回当前节点的第一个子节点(只读)<br><a id="more"></a><br>Implementation    返回XMLDOMImplementation对象<br>lastChild    返回当前节点最后一个子节点(只读)<br>nextSibling    返回当前节点的下一个兄弟节点(只读)<br>nodeName    返回节点的名字(只读)<br>nodeType    返回节点的类型(只读)<br>nodeTypedValue    存储节点值(可读写)<br>nodeValue    返回节点的文本(可读写)<br>ownerDocument    返回包含此节点的根文档(只读)<br>parentNode    返回父节点(只读)<br>Parsed    返回此节点及其子节点是否已经被解析(只读)<br>Prefix    返回名称空间前缀(只读)<br>preserveWhiteSpace    指定是否保留空白(可读写)<br>previousSibling    返回此节点的前一个兄弟节点(只读)<br>Text    返回此节点及其后代的文本内容(可读写)<br>url    返回最近载入的XML文档的URL(只读)<br>Xml    返回节点及其后代的XML表示(只读)<br>方法<br>a    为当前节点添加一个新的子节点,放在最后的子节点后<br>cloneNode    返回当前节点的拷贝<br>createAttribute    创建新的属性<br>节点操作DOMDocument属性和方法<br>createCDATASection    创建包括给定数据的CDATA段<br>createComment    创建一个注释节点<br>createDocumentFragment    创建DocumentFragment对象<br>createElement_x_x    创建一个元素节点<br>createEntityReference    创建EntityReference对象<br>createNode    创建给定类型,名字和命名空间的节点<br>createPorcessingInstruction    创建操作指令节点<br>createTextNode    创建包括给定数据的文本节点<br>getElementsByTagName    返回指定名字的元素集合<br>hasChildNodes    返回当前节点是否有子节点<br>insertBefore    在指定节点前插入子节点<br>Load    导入指定位置的XML文档<br>loadXML    导入指定字符串的XML文档<br>removeChild    从子结点列表中删除指定的子节点<br>replaceChild    从子节点列表中替换指定的子节点<br>Save    把XML文件存到指定节点<br>selectNodes    对节点进行指定的匹配,并返回匹配节点列表<br>selectSingleNode    对节点进行指定的匹配,并返回第一个匹配节点<br>transformNode    使用指定的样式表对节点及其后代进行转换<br>transformNodeToObject    使用指定的样式表将节点及其后代转换为对象<br>document.documentElement    返回文档的根节点<br>document.activeElement    返回当前文档中被击活的标签节点<br>event.fromElement    返回鼠标移出的源节点<br>event.toElement    返回鼠标移入的源节点<br>event.srcElement    返回激活事件的源节点<br>node.parentNode,node.parentElement    返回父节点<br>node.childNodes    返回子节点集合（包含文本节点及标签节点）<br>node.children    返回子标签节点集合<br>node.textNodes    返回子文本节点集合<br>node.firstChild    返回第一个子节点<br>node.lastChild    返回最后一个子节点<br>node.nextSibling    返回同属下一个节点<br>node.previousSibling    返回同属上一个节点<br>node.a(oNode)    追加子节点：<br>node.applyElment(oNode,sWhere)</p>
+<p>sWhere有两个值：outside / inside    应用标签节点<br>node.insertBefore()</p>
+<p>node.insertAdjacentElement()</p>
+<p>node.replaceAdjacentText()<br>插入节点</p>
+<p>node.remove()</p>
+<p>node.removeChild()</p>
+<p>node.removeNode()<br>删除节点</p>
+<p>node.replaceChild()</p>
+<p>node.replaceNode()</p>
+<p>node.swapNode()<br>替换节点</p>
+<p>node.cloneNode(bAll)    返回复制复制节点引用<br>node.contains()    是否有子节点<br>node.hasChildNodes()    是否有子节点</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        
+	<div id="comment">
+	
+	<!-- 多说评论框 start -->
+	 <div class="ds-thread" data-thread-key="/2017/04/13/DOM操作/" data-title="DOM操作" data-url="http://yoursite.com/2017/04/13/DOM操作/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"iTimeTraveler"};
+	  (function() {
+	    var ds = document.createElement('script');
+	    ds.type = 'text/javascript';ds.async = true;
+	    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	    ds.charset = 'UTF-8';
+	    (document.getElementsByTagName('head')[0] 
+	     || document.getElementsByTagName('body')[0]).appendChild(ds);
+	  })();
+	  </script>
+	<!-- 多说公共JS代码 end -->
+	
+	</div>
+
+
+      
+      
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/04/13/CSS3动画笔记/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          CSS3动画笔记
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/04/13/CSS3动画/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">CSS3动画</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-	
-		
-		
-		<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-	<a href="/2017/04/13/CSS3动画笔记/" class="archive-article-date">
-	  <time datetime="2017-04-13T03:31:39.000Z" itemprop="datePublished">2017-04-13</time>
-	</a>
 
-      
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2017/04/13/CSS3动画笔记/">CSS3动画笔记</a>
-    </h1>
-  
+<!-- Table of Contents -->
 
-    </header>
-  </div>
-</article>
-	
-		
-		
-		<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-	<a href="/2017/04/13/DOM操作/" class="archive-article-date">
-	  <time datetime="2017-04-13T03:31:39.000Z" itemprop="datePublished">2017-04-13</time>
-	</a>
-
-      
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2017/04/13/DOM操作/">DOM操作</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-	
-		
-		
-		<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-	<a href="/2017/04/13/CSS3动画/" class="archive-article-date">
-	  <time datetime="2017-04-13T03:31:39.000Z" itemprop="datePublished">2017-04-13</time>
-	</a>
-
-      
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2017/04/13/CSS3动画/">CSS3动画</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-	
-		
-		
-		<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-	<a href="/2017/04/13/[文言文]桃花源记/" class="archive-article-date">
-	  <time datetime="2017-04-13T03:31:39.000Z" itemprop="datePublished">2017-04-13</time>
-	</a>
-
-      
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2017/04/13/[文言文]桃花源记/">桃花源记</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-	
-		
-		
-		<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-	<a href="/2017/04/13/css常用笔记/" class="archive-article-date">
-	  <time datetime="2017-04-13T03:31:39.000Z" itemprop="datePublished">2017-04-13</time>
-	</a>
-
-      
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2017/04/13/css常用笔记/">css常用笔记</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-	
-		
-		
-		<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-	<a href="/2017/04/11/music/" class="archive-article-date">
-	  <time datetime="2017-04-11T06:11:21.000Z" itemprop="datePublished">2017-04-11</time>
-	</a>
-
-      
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2017/04/11/music/">music</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-	
-		
-		
-		<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-	<a href="/2017/04/11/photos/" class="archive-article-date">
-	  <time datetime="2017-04-11T06:11:07.000Z" itemprop="datePublished">2017-04-11</time>
-	</a>
-
-      
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2017/04/11/photos/">photos</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-	
-		
-		
-		<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-	<a href="/2017/04/11/books/" class="archive-article-date">
-	  <time datetime="2017-04-11T06:10:48.000Z" itemprop="datePublished">2017-04-11</time>
-	</a>
-
-      
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2017/04/11/books/">books</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-	
-		
-		
-		<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-	<a href="/2017/04/11/works/" class="archive-article-date">
-	  <time datetime="2017-04-11T06:10:15.000Z" itemprop="datePublished">2017-04-11</time>
-	</a>
-
-      
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2017/04/11/works/">works</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-	
-	
-		</div></section>
-	
-
-	<!-- 页数指示器 -->
-	
-
-
-
-
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#我的笔记-DOM操作"><span class="nav-number">1.</span> <span class="nav-text">我的笔记-DOM操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#属性"><span class="nav-number">1.1.</span> <span class="nav-text">属性</span></a></li></ol></li></ol>
+    
+    </div>
+  </aside>
 </section>
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">分类</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/books/">书籍库</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/works/">作品展</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/other/">其他</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/photos/">摄影集</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/notebooks/">笔记本</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/music/">音乐屋</a><span class="category-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a><span class="archive-list-count">10</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2017/04/13/65条最常用的正则表达式/">65条最常用的正则表达式</a>
-          </li>
-        
-          <li>
-            <a href="/2017/04/13/CSS3动画笔记/">CSS3动画笔记</a>
-          </li>
-        
-          <li>
-            <a href="/2017/04/13/DOM操作/">DOM操作</a>
-          </li>
-        
-          <li>
-            <a href="/2017/04/13/CSS3动画/">CSS3动画</a>
-          </li>
-        
-          <li>
-            <a href="/2017/04/13/[文言文]桃花源记/">桃花源记</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
         
       </div>
       
@@ -556,6 +363,8 @@
 
 
 
+
+  <script src="/js/dialog.js"></script>
 
 
 
