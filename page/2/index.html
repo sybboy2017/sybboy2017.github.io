@@ -3,22 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>音乐屋 | 快乐园 - 个人博客</title>
+  <title>快乐园 - 个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
   
   
   <meta name="description" content="快乐园，一起学，一起玩的东东">
-<meta name="keywords">
-<meta property="og:type" content="article">
-<meta property="og:title" content="music">
-<meta property="og:url" content="http://yoursite.com/2017/04/11/music/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="快乐园 - 个人博客">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
 <meta property="og:site_name" content="快乐园 - 个人博客">
 <meta property="og:description" content="快乐园，一起学，一起玩的东东">
-<meta property="og:updated_time" content="2017-04-11T06:15:27.054Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="music">
+<meta name="twitter:title" content="快乐园 - 个人博客">
 <meta name="twitter:description" content="快乐园，一起学，一起玩的东东">
   
     <link rel="alternate" href="/atom.xml" title="快乐园 - 个人博客" type="application/atom+xml">
@@ -44,11 +42,9 @@
   <link rel="stylesheet" href="/css/bootstrap.css" >
 
   
-    <link rel="stylesheet" href="/css/dialog.css">
+    <link rel="stylesheet" href="/css/home.css" >
   
 
-  
-    <link rel="stylesheet" href="/css/header-post.css" >
   
 
   
@@ -57,115 +53,188 @@
 
 
 
-  <body data-spy="scroll" data-target="#toc" data-offset="50">
+  <body>
 
 
+  
+    <header id="header">
+
+  
+    <div id="intrologo" class="intro-logo" style="background-position:center; background-repeat:no-repeat; background-image: url(); background-size: auto 100%;">
+    <script>
+        var imgUrls = "css/images/home-bg.jpg,css/images/sample.jpg".split(",");
+        var random = Math.floor((Math.random() * imgUrls.length ));
+        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+          document.getElementById("intrologo").style.backgroundImage='url(' + imgUrls[random] + ')';
+        } else {
+          document.getElementById("intrologo").style.backgroundImage='url(/' + imgUrls[random] + ')';
+        }
+    </script>
+  
+
+    <canvas width="100%" height="100%"></canvas>
+    <script>
+      var c = document.getElementsByTagName('canvas')[0],
+          x = c.getContext('2d'),
+          w = window.innerWidth,
+          h = window.innerHeight,
+          pr = window.devicePixelRatio || 1,
+          f = 90,
+          q,
+          m = Math,
+          r = 0,
+          u = m.PI*2,
+          v = m.cos,
+          z = m.random
+      c.width = w*pr
+      c.height = h*pr
+      x.scale(pr, pr)
+      x.globalAlpha = 0.6
+
+      
+    </script>
+    
+
+    
+      <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,1);"> 
+    
+
+        
+          <div class="homelogoback"  style="border: 1px solid #404040;" >
+            <h1><a href="#content" id="logo">快乐园 - 个人博客</a></h1>
+            <h3>分享、快乐、成长</h3>
+            <h5>快乐园，一起学，一起玩的东东</h5>
+          </div>
+        
+    
+    </div>
+  </div>
+
+  <!-- 自适应主页背景大图 -->
+  
+    <script>
+        var img = new Image();
+        var intrologodiv = document.getElementById("intrologo");
+        img.src = intrologodiv.style.backgroundImage.replace('url(','').replace(')','').replace(/\"/gi, "");
+        img.onload=function(){
+          if (img.width / img.height <= document.body.clientWidth / document.body.clientHeight) {
+            intrologodiv.style.backgroundSize = "100% auto";
+          } else {
+            intrologodiv.style.backgroundSize = "auto 100%";
+          }
+        };
+    </script>
+ 
+
+ <!-- home_logo_image居中 -->
+ 
+    <script>
+        var homelogodiv = document.getElementById("homelogo");
+        if (document.all.homelogo.offsetWidth > document.body.clientWidth) {
+          homelogodiv.style.width = document.body.clientWidth + "px";
+          homelogodiv.style.marginLeft = document.body.clientWidth * -0.5 + "px";
+        } else {
+          homelogodiv.style.width = homelogodiv.clientWidth  + "px";
+          homelogodiv.style.marginLeft = (homelogodiv.clientWidth)  * -0.5 + "px";
+        }
+    </script>
+  
+
+  <div class="intro-navigate">
+      <p class="navigater-list">
+        
+          <a id="beautifont" class="main-nav-link" href="/">首页</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/categories/blogs">博客栏</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/works">作品展</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/categories/notebooks">笔记本</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/books">书籍库</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/photos">摄影集</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/music">音乐屋</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/categories/talk">畅谈室</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/categories/other">其他</a>
+        
+      </p>
+  </div>
+
+</header>
   
   <div id="container">
     <div id="wrap">
       
-        <header>
-
-    <div id="allheader" class="navbar navbar-default navbar-static-top" role="navigation">
-        <div class="navbar-inner">
-          
-          <div class="container"> 
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-            
-              <a class="brand" style="
-                 margin-top: 0px;"  
-                href="#" data-toggle="modal" data-target="#myModal" >
-                  <img width="124px" height="124px" alt="Hike News" src="/css/images/mylogo.jpg">
-              </a>
-            
-            
-            <div class="navbar-collapse collapse">
-              <ul class="hnav navbar-nav">
-                
-                  <li> <a class="main-nav-link" href="/">首页</a> </li>
-                
-                  <li> <a class="main-nav-link" href="/categories/blogs">博客栏</a> </li>
-                
-                  <li> <a class="main-nav-link" href="/works">作品展</a> </li>
-                
-                  <li> <a class="main-nav-link" href="/categories/notebooks">笔记本</a> </li>
-                
-                  <li> <a class="main-nav-link" href="/books">书籍库</a> </li>
-                
-                  <li> <a class="main-nav-link" href="/photos">摄影集</a> </li>
-                
-                  <li> <a class="main-nav-link" href="/music">音乐屋</a> </li>
-                
-                  <li> <a class="main-nav-link" href="/categories/talk">畅谈室</a> </li>
-                
-                  <li> <a class="main-nav-link" href="/categories/other">其他</a> </li>
-                
-                  <li><div id="search-form-wrap">
-
-    <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="" />
-        <button type="submit" class="search-form-submit"></button>
-    </form>
-    <div class="ins-search">
-    <div class="ins-search-mask"></div>
-    <div class="ins-search-container">
-        <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="请输入关键词..." />
-            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
-        </div>
-        <div class="ins-section-wrapper">
-            <div class="ins-section-container"></div>
-        </div>
-    </div>
-</div>
-<script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: '文章',
-            PAGES: '页面',
-            CATEGORIES: '分类',
-            TAGS: '标签',
-            UNTITLED: '(无标题)',
-        },
-        ROOT_URL: '/',
-        CONTENT_URL: '/content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
-</script>
-<script src="/js/insight.js"></script>
-
-</div></li>
-            </div>
-          </div>
-                
-      </div>
-    </div>
-
-</header>
-
-
-
-      
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-music" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;">
+  
+    <article id="post-HEXO建站-基本设置"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     
     
       <header class="article-header">
         
   
-    <h1 class="thumb" class="article-title" itemprop="name">
-      music
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/04/12/HEXO建站-基本设置/">HEXO建站-基本设置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2017/04/12/HEXO建站-基本设置/" class="article-date">
+	  <time datetime="2017-04-12T05:48:17.000Z" itemprop="datePublished">2017-04-12</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/blogs/">博客栏</a>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a><strong>前言</strong></h2><p>本文主要围绕两部分进行介绍：</p>
+<p>1、HEXO的基本命令与基本目录结构<br>2、HEXO网站的配置文件与基本配置</p>
+        <!-- 前言本文主要围绕两部分进行介绍：
+1、HEXO的基本命令与基本目录结构2、HEXO网站的配置文件与基本配置
+
+HEXO的基本命令与基本目录结构基本目录结构主目录├── .deploy       #需要部署的文件
+├── node_modules  #Hexo插件
+├── public        #生成的静态网页文件
+├── scaffolds     #模板
+├── source   ......  -->
+        <p class="article-more-link">
+          <a href="/2017/04/12/HEXO建站-基本设置/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-music"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/04/11/music/">music</a>
     </h1>
   
 
@@ -188,70 +257,147 @@
     </div>
     <footer class="article-footer">
       
-        
-	<div id="comment">
-	
-	<!-- 多说评论框 start -->
-	 <div class="ds-thread" data-thread-key="/2017/04/11/music/" data-title="music" data-url="http://yoursite.com/2017/04/11/music/"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"iTimeTraveler"};
-	  (function() {
-	    var ds = document.createElement('script');
-	    ds.type = 'text/javascript';ds.async = true;
-	    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-	    ds.charset = 'UTF-8';
-	    (document.getElementsByTagName('head')[0] 
-	     || document.getElementsByTagName('body')[0]).appendChild(ds);
-	  })();
-	  </script>
-	<!-- 多说公共JS代码 end -->
-	
-	</div>
-
-
-      
       
     </footer>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2017/04/11/photos/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">上一篇</strong>
-      <div class="article-nav-title">
-        
-          photos
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2017/04/12/HEXO建站-基本设置/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">HEXO建站-基本设置</div>
-    </a>
-  
-</nav>
-
   
 </article>
 
 <!-- Table of Contents -->
 
-  <aside id="sidebar">
-    <div id="toc" class="toc-article">
-    <strong class="toc-title">文章目录</strong>
+  
+    <article id="post-photos"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
     
-        <ol class="artnav">无</ol>
     
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/04/11/photos/">photos</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2017/04/11/photos/" class="article-date">
+	  <time datetime="2017-04-11T06:11:07.000Z" itemprop="datePublished">2017-04-11</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/photos/">摄影集</a>
+
     </div>
-  </aside>
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-books"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/04/11/books/">books</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2017/04/11/books/" class="article-date">
+	  <time datetime="2017-04-11T06:10:48.000Z" itemprop="datePublished">2017-04-11</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/books/">书籍库</a>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-works"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/04/11/works/">works</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2017/04/11/works/" class="article-date">
+	  <time datetime="2017-04-11T06:10:15.000Z" itemprop="datePublished">2017-04-11</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/works/">作品展</a>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/">&laquo; 上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
+
 </section>
         
       </div>
+      
+        <div align="center" style="margin-top: 30px;"><hr class="hr" style="margin:0px; height:3px;"></div>
       
       <footer id="footer">
   
@@ -351,9 +497,9 @@
 <script src="/js/bootstrap.js"></script>
 
 
+  <script src="/js/home.js"></script>
 
 
-  <script src="/js/dialog.js"></script>
 
 
 

@@ -3,23 +3,28 @@
 <head>
   <meta charset="utf-8">
   
-  <title>css常用笔记 | 快乐园 - 个人博客</title>
+  <title>hexo技巧分享-文章列表实现 | 快乐园 - 个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
   
   
-  <meta name="description" content="我的笔记-CSS笔记积累1：表格不被撑开table-layout: fixed; word-break: break-all;;border-collapse: collapse 积累2：不设宽高居中&amp;lt;div id=”abc” style=”display:table;text-align:center;width:100%;height:100%;”&amp;gt;        &amp;lt;span">
+  <meta name="description" content="前言为实现文章列表的显示方式，我们通过HEXO的分类功能实现。操作步骤： 1、修改HEXO POST模板，添加categories。 作用：以后的文章将会以此作为模板新增。2、新增一文章，并修改分类属性。 作用：分类属性如果被设置，在HEXO编译会生成对应分类目录3、修改主题配置文件(config.yml),添加MENU分类字段 作用: 导航栏显示分类链接4、假定为中文网站，修改主题目录下的语言配">
 <meta name="keywords">
 <meta property="og:type" content="article">
-<meta property="og:title" content="css常用笔记">
-<meta property="og:url" content="http://yoursite.com/2017/04/13/css常用笔记/index.html">
+<meta property="og:title" content="HEXO技巧分享-文章列表实现">
+<meta property="og:url" content="http://yoursite.com/2017/04/12/HEXO技巧分享-文章列表实现/index.html">
 <meta property="og:site_name" content="快乐园 - 个人博客">
-<meta property="og:description" content="我的笔记-CSS笔记积累1：表格不被撑开table-layout: fixed; word-break: break-all;;border-collapse: collapse 积累2：不设宽高居中&amp;lt;div id=”abc” style=”display:table;text-align:center;width:100%;height:100%;”&amp;gt;        &amp;lt;span">
-<meta property="og:updated_time" content="2017-04-13T05:31:44.892Z">
+<meta property="og:description" content="前言为实现文章列表的显示方式，我们通过HEXO的分类功能实现。操作步骤： 1、修改HEXO POST模板，添加categories。 作用：以后的文章将会以此作为模板新增。2、新增一文章，并修改分类属性。 作用：分类属性如果被设置，在HEXO编译会生成对应分类目录3、修改主题配置文件(config.yml),添加MENU分类字段 作用: 导航栏显示分类链接4、假定为中文网站，修改主题目录下的语言配">
+<meta property="og:image" content="http://ooaicwlir.bkt.clouddn.com/blogs0160517222733.jpg">
+<meta property="og:image" content="http://ooaicwlir.bkt.clouddn.com/blogs20160517221913.jpg">
+<meta property="og:image" content="http://ooaicwlir.bkt.clouddn.com/blogs20160517222214.jpg">
+<meta property="og:image" content="http://ooaicwlir.bkt.clouddn.com/blogs20160517223020.jpg">
+<meta property="og:updated_time" content="2017-04-12T09:31:27.326Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="css常用笔记">
-<meta name="twitter:description" content="我的笔记-CSS笔记积累1：表格不被撑开table-layout: fixed; word-break: break-all;;border-collapse: collapse 积累2：不设宽高居中&amp;lt;div id=”abc” style=”display:table;text-align:center;width:100%;height:100%;”&amp;gt;        &amp;lt;span">
+<meta name="twitter:title" content="HEXO技巧分享-文章列表实现">
+<meta name="twitter:description" content="前言为实现文章列表的显示方式，我们通过HEXO的分类功能实现。操作步骤： 1、修改HEXO POST模板，添加categories。 作用：以后的文章将会以此作为模板新增。2、新增一文章，并修改分类属性。 作用：分类属性如果被设置，在HEXO编译会生成对应分类目录3、修改主题配置文件(config.yml),添加MENU分类字段 作用: 导航栏显示分类链接4、假定为中文网站，修改主题目录下的语言配">
+<meta name="twitter:image" content="http://ooaicwlir.bkt.clouddn.com/blogs0160517222733.jpg">
   
     <link rel="alternate" href="/atom.xml" title="快乐园 - 个人博客" type="application/atom+xml">
   
@@ -157,7 +162,7 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-css常用笔记" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-HEXO技巧分享-文章列表实现" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     
     
@@ -165,7 +170,7 @@
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      css常用笔记
+      HEXO技巧分享-文章列表实现
     </h1>
   
 
@@ -173,82 +178,30 @@
     
     <div class="article-meta">
       
-	<a href="/2017/04/13/css常用笔记/" class="article-date">
-	  <time datetime="2017-04-13T03:31:39.000Z" itemprop="datePublished">2017-04-13</time>
+	<a href="/2017/04/12/HEXO技巧分享-文章列表实现/" class="article-date">
+	  <time datetime="2017-04-12T08:05:19.000Z" itemprop="datePublished">2017-04-12</time>
 	</a>
 
       
-    <a class="article-category-link" href="/categories/notebooks/">笔记本</a>
+    <a class="article-category-link" href="/categories/blogs/">博客栏</a>
 
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="我的笔记-CSS笔记"><a href="#我的笔记-CSS笔记" class="headerlink" title="我的笔记-CSS笔记"></a><strong>我的笔记-CSS笔记</strong></h3><h4 id="积累1：表格不被撑开"><a href="#积累1：表格不被撑开" class="headerlink" title="积累1：表格不被撑开"></a><strong>积累1：表格不被撑开</strong></h4><pre><code>table-layout: fixed; word-break: break-all;;border-collapse: collapse
-</code></pre><h4 id="积累2：不设宽高居中"><a href="#积累2：不设宽高居中" class="headerlink" title="积累2：不设宽高居中"></a><strong>积累2：不设宽高居中</strong></h4><pre><code>&lt;div id=”abc” style=”display:table;text-align:center;width:100%;height:100%;”&gt;
-
-      &lt;span style=”background:#f00; display:table-cell; vertical-align:middle;”&gt;
-
-            &lt;input type=”button” value=”item1″ /&gt;
-
-      &lt;/span&gt;
-
-&lt;/div&gt;
-</code></pre><a id="more"></a>
-<h4 id="积累3：块状元素-内联元素"><a href="#积累3：块状元素-内联元素" class="headerlink" title="积累3：块状元素 内联元素"></a><strong>积累3：块状元素 内联元素</strong></h4><p><strong>块状元素</strong><br>address – 地址</p>
-<p>blockquote – 块引用</p>
-<p>center – 举中对齐块</p>
-<p>dir – 目录列表</p>
-<p>div – 常用块级容易，也是CSS layout的主要标签</p>
-<p>dl – 定义列表</p>
-<p>fieldset – form控制组</p>
-<p>form – 交互表单</p>
-<p>h1 – 大标题</p>
-<p>h2 – 副标题</p>
-<p>h3 – 3级标题</p>
-<p>h4 – 4级标题</p>
-<p>h5 – 5级标题</p>
-<p>h6 – 6级标题</p>
-<p>hr – 水平分隔线</p>
-<p>isindex – input prompt</p>
-<p>menu – 菜单列表</p>
-<p>noframes – frames可选内容，（对于不支持frame的浏览器显示此区块内容</p>
-<p>noscript – 可选脚本内容（对于不支持script的浏览器显示此内容）</p>
-<p>ol – 有序表单</p>
-<p>p – 段落</p>
-<p>pre – 格式化文本</p>
-<p>table – 表格</p>
-<p>ul – 无序列表</p>
-<p><strong>内联元素</strong><br>a – 锚点</p>
-<p>abbr – 缩写</p>
-<p>acronym – 首字</p>
-<p>b – 粗体(不推荐)</p>
-<p>bdo – bidi override</p>
-<p>big – 大字体</p>
-<p>br – 换行</p>
-<p>cite – 引用</p>
-<p>code – 计算机代码(在引用源码的时候需要)</p>
-<p>dfn – 定义字段</p>
-<p>em – 强调</p>
-<p>font – 字体设定(不推荐)</p>
-<p>i – 斜体</p>
-<p>img – 图片</p>
-<p>input – 输入框</p>
-<p>kbd – 定义键盘文本</p>
-<p>label – 表格标签</p>
-<p>q – 短引用</p>
-<p>s – 中划线(不推荐)</p>
-<p>samp – 定义范例计算机代码</p>
-<p>select – 项目选择</p>
-<p>small – 小字体文本</p>
-<p>span – 常用内联容器，定义文本内区块</p>
-<p>strike – 中划线</p>
-<p>strong – 粗体强调</p>
-<p>sub – 下标</p>
-<p>sup – 上标</p>
-<p>textarea – 多行文本输入框</p>
-<p>tt – 电传文本</p>
-<p>u – 下划线</p>
-<p>var – 定义变量</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a><strong>前言</strong></h2><p>为实现文章列表的显示方式，我们通过HEXO的分类功能实现。<br>操作步骤：</p>
+<p>1、修改HEXO POST模板，添加categories。 作用：以后的文章将会以此作为模板新增。<br>2、新增一文章，并修改分类属性。 作用：分类属性如果被设置，在HEXO编译会生成对应分类目录<br>3、修改主题配置文件(config.yml),添加MENU分类字段 作用: 导航栏显示分类链接<br>4、假定为中文网站，修改主题目录下的语言配置文件(zh-Hans.yml) 作用：导航栏链接显示中文</p>
+<a id="more"></a>
+<h2 id="实施细节："><a href="#实施细节：" class="headerlink" title="实施细节："></a><strong>实施细节</strong>：</h2><p>修改HEXO POST模板，添加categories</p>
+<p>在你的HEXO根目录下，找到文件夹scaffolds，此文件夹下定义创建文章的基本模型，你可以修改此模板<br>实现每次进行HEXO NEW 文章名，文章会以您的模板进行对应配置属性创建。这里我们主要是新增categories<br>字段，让每次新增文章都会打上此属性字段。</p>
+<p><img src="http://ooaicwlir.bkt.clouddn.com/blogs0160517222733.jpg" alt=""></p>
+<h3 id="新增一文章，并修改分类属性"><a href="#新增一文章，并修改分类属性" class="headerlink" title="新增一文章，并修改分类属性"></a><strong>新增一文章，并修改分类属性</strong></h3><p>通过git bash 新建文章 hexo new 你的文章名，并打开您的文章，在categories写上你的分类名字，<br>此操作后并保存文档，在你进行hexo g编译的时候会在PUBLIC目录下的 categories下建立以你分类名字的<br>文件夹，这一步很重要，以后的链接将定向到此文件夹。(本文的测试分类名为：ittech 中文名技术)</p>
+<p><img src="http://ooaicwlir.bkt.clouddn.com/blogs20160517221913.jpg" alt=""></p>
+<h3 id="修改主题配置文件-config-yml-添加MENU分类字段"><a href="#修改主题配置文件-config-yml-添加MENU分类字段" class="headerlink" title="修改主题配置文件(config.yml),添加MENU分类字段"></a><strong>修改主题配置文件(config.yml),添加MENU分类字段</strong></h3><p>此部分主要在导航栏显示你的分类作为链接字段。 就如第三部的分类目录位置 为/categories/ittech</p>
+<p><img src="http://ooaicwlir.bkt.clouddn.com/blogs20160517222214.jpg" alt=""></p>
+<h3 id="修改主题目录下的语言配置文件-zh-Hans-yml"><a href="#修改主题目录下的语言配置文件-zh-Hans-yml" class="headerlink" title="修改主题目录下的语言配置文件(zh-Hans.yml)"></a><strong>修改主题目录下的语言配置文件(zh-Hans.yml)</strong></h3><p>此部分是将ittech翻译为中文的”技术”，请修改语言的文件zh-Hans.yml 文件在对应的主题目录下的languages</p>
+<p><img src="http://ooaicwlir.bkt.clouddn.com/blogs20160517223020.jpg" alt=""></p>
+<p>到此你已经完成所有的操作，请重新编译你的网站文件</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a><strong>结语</strong></h2><p>如果你还需要了解更多技术文章信息，请继续关注</p>
 
       
     </div>
@@ -258,7 +211,7 @@
 	<div id="comment">
 	
 	<!-- 多说评论框 start -->
-	 <div class="ds-thread" data-thread-key="/2017/04/13/css常用笔记/" data-title="css常用笔记" data-url="http://yoursite.com/2017/04/13/css常用笔记/"></div>
+	 <div class="ds-thread" data-thread-key="/2017/04/12/HEXO技巧分享-文章列表实现/" data-title="HEXO技巧分享-文章列表实现" data-url="http://yoursite.com/2017/04/12/HEXO技巧分享-文章列表实现/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -285,19 +238,19 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/04/13/CSS3动画/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/04/12/Git-Hexo-搭建个人博客网站/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">上一篇</strong>
       <div class="article-nav-title">
         
-          CSS3动画
+          Git + Hexo 搭建个人博客网站
         
       </div>
     </a>
   
   
-    <a href="/2017/04/13/谈谈现在的骗局/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/04/13/[文言文]桃花源记/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">谈谈现在的骗局</div>
+      <div class="article-nav-title">桃花源记</div>
     </a>
   
 </nav>
@@ -311,7 +264,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
     
-        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#我的笔记-CSS笔记"><span class="nav-number">1.</span> <span class="nav-text">我的笔记-CSS笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#积累1：表格不被撑开"><span class="nav-number">1.1.</span> <span class="nav-text">积累1：表格不被撑开</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#积累2：不设宽高居中"><span class="nav-number">1.2.</span> <span class="nav-text">积累2：不设宽高居中</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#积累3：块状元素-内联元素"><span class="nav-number">1.3.</span> <span class="nav-text">积累3：块状元素 内联元素</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实施细节："><span class="nav-number">2.</span> <span class="nav-text">实施细节：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#新增一文章，并修改分类属性"><span class="nav-number">2.1.</span> <span class="nav-text">新增一文章，并修改分类属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改主题配置文件-config-yml-添加MENU分类字段"><span class="nav-number">2.2.</span> <span class="nav-text">修改主题配置文件(config.yml),添加MENU分类字段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改主题目录下的语言配置文件-zh-Hans-yml"><span class="nav-number">2.3.</span> <span class="nav-text">修改主题目录下的语言配置文件(zh-Hans.yml)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结语"><span class="nav-number">3.</span> <span class="nav-text">结语</span></a></li></ol>
     
     </div>
   </aside>
