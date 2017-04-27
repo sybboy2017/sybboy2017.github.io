@@ -1,0 +1,133 @@
+.music_container{
+	width:100%;
+}
+.mag_nav_bg{
+    background: #fafafa;
+    height: 59px;
+    overflow: hidden;
+    border-bottom: 1px solid #f4f4f4;
+}
+.mag_nav{
+    width:90%;
+    overflow: hidden;
+    zoom: 1;
+    margin:0 auto;
+}
+.mag_nav h2{
+    margin: 20px 50px 0 0;
+    line-height: 24px;
+    color: #333;
+    font-weight: normal;
+    font-style: normal;
+    font-size:20px;
+    float: left;
+}
+.mag_nav .ico{
+    width: 24px;
+    height: 24px;
+    margin: 0 8px 0 0;
+    background-position: 0 -72px;
+}
+.m_ico{
+    background: url(images/m_ico.png) no-repeat;
+}
+.m_content{
+    margin: 0 auto;
+    min-height: 700px;
+    width:90%;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    font-size: 0px;
+    line-height: 0px;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.m_content ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.manage_song ul li {
+    overflow: hidden;
+    zoom: 1;
+    height: 40px;
+    /*line-height: 26px;*/
+    padding: 13px 0 13px 20px;
+    background: #fafafa;
+    color: #999;
+    vertical-align: middle;
+}
+.manage_tit ul li {
+    overflow: inherit;
+    padding-left: 10px;
+    background: none;
+}
+.manage_tit li > * {
+    font-size: 12px !important;
+    color: #C3C3C3;
+}
+.mg_rank {
+    float: left;
+    width: 50px;
+    text-align: center;
+    color: #666;
+}
+.manage_song_style2 .list_name {
+    width: 280px;
+    float: left;
+}
+.manage_song .list_name {
+    width: 430px;
+    margin-left: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+.mg_time{
+    width: 130px;
+    float: left;
+    text-align: right;
+}
+.manage_song_style2 .mg_time {
+    width: 90px;
+    text-align: left;
+}
+.list_action {
+    float: right;
+    width: 170px;
+    overflow: hidden;
+    zoom: 1;
+    display: block;
+}
+.manage_song_style2 .list_action {
+    padding-right: 10px;
+}
+.manage_song .list_action {
+    width: auto;
+    padding-right: 15px;
+}
+.manage_song_style2 ul li {
+    padding-left: 10px;
+}
+.list_action a {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    text-indent: -9999em;
+    overflow: hidden;
+    float: left;
+    margin: 4px 0 0 15px;
+}
+.manage_song ul .mg_bg {
+    background: #fff;
+}
+.manage_song_style2 .list_action a {
+    margin-left: 10px;
+}
+.list_name a{
+	text-decoration: none;
+    color: #666666;
+}
