@@ -113,13 +113,13 @@
 }
 .list_action a {
     display: block;
-    float: left;
+   /* float: left;
     width: 16px;
     height: 16px;
-    text-indent: -9999em;
     overflow: hidden;
     float: left;
-    margin: 4px 0 0 15px;
+    margin: 4px 0 0 15px;*/
+    color:#666666;
 }
 .manage_song ul .mg_bg {
     background: #fff;
