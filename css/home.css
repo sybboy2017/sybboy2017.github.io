@@ -45,17 +45,27 @@ html{
 .intro-navigate{
 	width: 100%;
 	position: absolute;
-	bottom: 0px;
-	padding-top: 10px;
-    padding-bottom: 10px;
+	top: 0px;
+	background: url("../images/header_nav_bg.png") repeat-x bottom;
+    height: 75px;
+/*	padding-top: 10px;
+    padding-bottom: 10px;*/
 	text-align: center;
-	border-bottom: 1px solid #eef1f8;
-	background: rgba(255,255,255,.9);
+/*	border-bottom: 1px solid #eef1f8;*/
+/*	background: rgba(255,255,255,.9);*/
 	-moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
     -khtml-user-select: none;
     user-select: none;
+}
+.kly_logo{
+	width: 140px;
+    height: 44px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: inline-block;
 }
 /*.intro-logo:before{
     content: "";
@@ -91,10 +101,16 @@ html{
 	color:#444444;
 	font-weight: 100;
 	font-size: 1.2em;
+	width: 70%;
+    margin: 0 auto;
 }
 .navigater-list>a {
-	padding: 25px 20px 25px 20px;
+	padding: 10px 10px 5px 10px;
 	line-height: 60px;
+	color: #fff;
+    height: 34px;
+    font-size: 16px;
+    margin-left: 20px;
 }
 .home-bg{
 	width: 100%;
@@ -122,6 +138,7 @@ html{
 }
 
 .homelogo{
+	display: none;
 	max-width: 400px;
 	height: auto;
 	padding: 10px;
